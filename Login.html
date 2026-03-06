@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Y registro-Ansaldo4.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tiene una cuenta?</h3>
+                    <p>Iniciar sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesion</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aun no tiene una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesión</p>
+                    <button id="btn__iniciar-registrarse">Registrarse</button>
+                </div>
+            </div>
+            <!--Formulario de login y Registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="log.php"  method="POST" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" name="usuario" placeholder="Usuario" >
+                    <input type="password" name="contraseña" placeholder="Contraseña">
+                    <button>Entrar </button>
+
+                </form>
+                <!--Registro-->
+                <form action="registros.php"  method="POST" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                    <input type="text" name="correo" placeholder="Correo Electronico">
+                    <input type="text" name="usuario"placeholder="Nombre de Usuario">
+                    <input type="password" name="contraseña" placeholder="Contraseña">
+                    <button>Registrarse</button>
+                </form>
+
+                
+            </div>
+        </div>
+    </main>
+    <script src="innovatec/scrip.js"></script>
+    
+
+</body>
+</html>
